@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dates</title>
+    <style>
+      #time {
+        border: 2px solid black;
+        background-color: aqua;
+        border-radius: 5px;
+        padding: 20px;
+        margin: 5px;
+        align-items: center;
+        text-align: center;
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <span id="time"></span>
+    </div>
+    <script>
+      let now = new Date();
+      console.log(now);
+      setInterval(updateTime, 1000);
+
+      function updateTime() {
+        time.innerHTML = new Date();
+      }
+    </script>
+  </body>
+</html>

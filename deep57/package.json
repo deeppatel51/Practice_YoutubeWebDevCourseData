@@ -1,0 +1,11 @@
+{
+  "name": "deep57",
+  "version": "1.0.0",
+  "description": "best package",
+  "main": "deep57.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Deep",
+  "license": "ISC"
+}

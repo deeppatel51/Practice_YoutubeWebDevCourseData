@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>events</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>para</h1>
+      <p id="para">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et sunt porro
+        doloremque ad, soluta excepturi incidunt ut adipisci architecto nam
+        tenetur numquam dolor illum blanditiis quidem sequi aliquam provident
+        nobis praesentium earum aut. Molestias, fugiat eos. Magni nemo tenetur
+        officia ab, eius quas facere iusto ipsam ex quam debitis modi et
+        repellat impedit! Expedita, eius numquam impedit facere optio
+        perspiciatis! Ea reprehenderit quibusdam, officia porro perspiciatis
+        corrupti atque corporis. Recusandae autem nesciunt quia pariatur non
+        unde, assumenda, iste voluptates, hic expedita dolorem. Tenetur sint,
+        beatae earum tempora, harum dicta ea corrupti delectus aliquid nam ullam
+        explicabo cum quo, quidem incidunt illum numquam laboriosam. Maxime
+        aliquam enim cum ipsum et commodi, unde repellendus eos praesentium
+        placeat facere asperiores architecto velit expedita. Ratione quibusdam
+        consectetur aliquam ipsam laborum culpa ut eius accusamus libero sequi
+        eligendi atque iure delectus exercitationem sunt quo autem eos,
+        aspernatur architecto ducimus explicabo. Expedita commodi necessitatibus
+        pariatur ratione fuga cupiditate hic ipsam asperiores, alias laborum
+        dignissimos obcaecati illum explicabo adipisci eius soluta ex? Libero
+        cum dignissimos reiciendis fuga? Amet hic porro, ipsa animi laborum
+        asperiores, alias id debitis explicabo ullam magni similique sit,
+        tempore earum totam pariatur sunt illo natus architecto quod nemo
+        deleniti ratione vero consequatur? Libero?
+      </p>
+      <button id="btn" onclick="toggleHide()">show/hide</button>
+    </div>
+    <script>
+      let para = document.getElementById("para");
+      para.addEventListener("mouseover", function run() {
+        alert("mouse inside");
+      });
+      function toggleHide() {
+        let btn = document.getElementById("btn");
+        let para = document.getElementById("para");
+        if (para.style.display != "none") {
+          para.style.display = "none";
+        } else {
+          para.style.display = "block";
+        }
+      }
+    </script>
+  </body>
+</html>
